@@ -1,0 +1,12 @@
+server:
+  port: 8767 # 本服务所使用的端口号
+  
+eureka:
+  client:
+    service-url:
+      # defaultZone: http://localhost:8761/eureka/ # 指定将本微服务注册到的Eureka注册中心的地址
+      defaultZone: http://192.168.1.110:8761/eureka/ # 生产环境（决不要是localhost，否则在Eureka管理页面看不到本服务已注册上来）
+      
+spring:
+  application:
+    name: eshop-datalink-service # 自己要注册的微服务名称
